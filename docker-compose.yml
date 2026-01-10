@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  ${APP_NAME}:
+    image: ${IMAGE_NAME}
+    container_name: ${APP_NAME}
+    ports:
+      - "${HOST_PORT}:${CONTAINER_PORT}"
+    restart: unless-stopped
+
